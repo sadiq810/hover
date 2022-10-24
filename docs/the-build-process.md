@@ -96,6 +96,3 @@ docker run --rm -v /PATH/TO/.hover/out/assets:/out <stage>:latest-assets cp -R p
 ```
 
 At the end of the build, the final tag will be ready on the host machine under the naming convention of `<stage>:<build_id>` and the compiled assets files will be stored in the `.hover/out/assets` directory.
-
-
-find . -type f -name '*.css' -exec sed -i'' -e 's/url(/url(assets\/zxczxc\//g'  {} +
