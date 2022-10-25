@@ -22,7 +22,7 @@ Hover is a CLI for deploying web applications to AWS Lambda. It containerizes an
 
 However, due to strict compliance requirements, using Vapor or any deployment platform was not an option in some cases. Teams developing apps under such constraints were not permitted to share their AWS credentials with a third party. Hover was designed specifically for these teams. It is a small tool that allows you to deploy serverless applications directly from your CI or local machines.
 
-If your team doesn't operate under such compliance rules, go for [Vapor](https://vapor.laravel.com/). Vapor isn't just a deployment tool, it is a complete platform that provides both a GUI & CLI for managing all AWS resources needed to run a Laravel app on AWS Lambda. It handles databases, Redis cache, SSL certificates, S3 storage, DynamoDB tables and more.
+If your team doesn't operate under such compliance rules, go for [Vapor](https://vapor.laravel.com/). Vapor isn't just a deployment tool, it is a complete platform that provides both a GUI & CLI for managing all AWS resources needed to run a Laravel app on AWS Lambda. It handles databases, Redis cache, SSL certificates, S3 storage, DynamoDB tables, DNS management, Load Balancing and more.
 
 ## Installation
 
