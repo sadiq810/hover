@@ -648,7 +648,7 @@ func cloudFrontDistribution(apiGatewayResourceName string, manifest *manifest.Ma
 	if len(manifest.HTTP.Domains) > 0 {
 		output["CFDistribution"].(map[string]any)["Properties"].(map[string]any)["DistributionConfig"].(map[string]any)["Aliases"] = strings.Split(strings.ReplaceAll(manifest.HTTP.Domains, " ", ""), ",")
 		output["CFDistribution"].(map[string]any)["Properties"].(map[string]any)["DistributionConfig"].(map[string]any)["ViewerCertificate"] = map[string]any{"" +
-			"AcmCertificateArn": "arn:aws:acm:us-east-1:324027754711:certificate/e3109ab1-3ca4-4f33-b580-620bfdaf7617",
+			"AcmCertificateArn": manifest.HTTP.Certificate,
 			"SslSupportMethod": "sni-only",
 		}
 	}
