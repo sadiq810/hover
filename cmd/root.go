@@ -37,7 +37,6 @@ func init() {
 	rootCmd.AddCommand(stageCmd.Cmd())
 	rootCmd.AddCommand(commandCmd.Cmd())
 	rootCmd.AddCommand(secretCmd.Cmd())
-	rootCmd.AddCommand(secretCmd.Cmd())
 	rootCmd.AddCommand(deployCmd.Cmd())
 	rootCmd.AddCommand(buildCmd.Cmd())
 
