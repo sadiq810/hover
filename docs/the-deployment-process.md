@@ -16,7 +16,7 @@ During this step, Hover will tag the `<stage>:latest` local image with the build
 
 Hover will generate an authorization token to access the ECR repo prior to pushing the image. This will only work when the AWS user/role committing the deployment has the `ecr:GetAuthorizationToken` permission.
 
-## Updating The CouldFormation Stack
+## Updating The CloudFormation Stack
 
 Hover generates a CloudFormation template for each deployment and updates the CloudFormation stack for the stage with the new template.
 
