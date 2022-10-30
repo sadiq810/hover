@@ -1,4 +1,4 @@
-# Archticture Concept
+# Architecture Concept
 
 Hover was built with enterprise applications in mind and is optimized for security and flexibility. Each stage of your application (dev, staging, production, sandbox, etc.) has its own manifest file in which you can configure the various AWS resources used by the stage. Each stage can be deployed using a different [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html). Each profile can be associated with a different user, with granular permissions to manage only this stage, or even a different AWS account.
 
